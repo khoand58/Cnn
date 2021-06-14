@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI, File, UploadFile
 
 app = FastAPI()

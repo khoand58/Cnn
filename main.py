@@ -6,9 +6,11 @@ from PIL import ImageTk, Image
 
 import numpy
 # load the trained model to classify sign
-from keras.models import load_model
-
-model = load_model('my_model.h5')
+from tensorflow import keras
+# from keras.models import load_model
+# from keras.models import load_model
+#
+model = keras.models.load_model('my_model.h5')
 
 # dictionary to label all traffic signs class.
 classes = {1: 'Speed limit (20km/h)',
